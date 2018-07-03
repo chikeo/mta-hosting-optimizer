@@ -34,6 +34,7 @@ k8s-deploy:
   - gcloud auth activate-service-account --key-file key.json
   - gcloud config set compute/zone europe-west1-c
   - gcloud config set project mta-hosting-optimizer
+  - gcloud config unset container/use_client_certificate
   - gcloud config set container/use_client_certificate True
   - gcloud container clusters get-credentials mta-hosting-optimizer
   - kubectl delete secret registry.gitlab.com
