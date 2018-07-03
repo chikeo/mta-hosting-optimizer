@@ -37,8 +37,8 @@ k8s-deploy:
   - gcloud config unset container/use_client_certificate
   - gcloud config set container/use_client_certificate True
   - gcloud container clusters get-credentials mta-hosting-optimizer
-  - kubectl delete secret registry.gitlab.com
   - kubectl create -f admin.yaml
   - kubectl create clusterrolebinding serviceaccounts-cluster-admin--clusterrole=cluster-admin --group=system:serviceaccounts
+  - kubectl delete secret registry.gitlab.com
   - kubectl create secret docker-registry registry.gitlab.com --docker-server=https://registry.gitlab.com --docker-username=chikelueoji --docker-password=$REGISTRY_PASSWD --docker-email=chike_oji@yahoo.com
   - kubectl apply -f deployment.yml
