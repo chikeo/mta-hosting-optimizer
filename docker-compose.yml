@@ -1,0 +1,6 @@
+version: '2'
+services:
+  web:
+    image: 'registry.gitlab.com/chikelueoji/mta-hosting-optimizer:latest'
+    ports:
+     - "8082:8080"

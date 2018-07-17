@@ -26,29 +26,8 @@ docker-build:
   - docker build -t registry.gitlab.com/chikelueoji/mta-hosting-optimizer .
   - docker push registry.gitlab.com/chikelueoji/mta-hosting-optimizer
 
-k8s-deploy:
-  image: google/cloud-sdk
+digitalocean-deploy:
+  image: registry.gitlab.com/chikelueoji/mta-hosting-optimizer:latest
   stage: deploy
   script:
-
-  - echo "$GOOGLE_KEY" > key.json
-
-  - gcloud auth activate-service-account --key-file key.json
-
-  - gcloud config set compute/zone europe-west1-c
-
-  - gcloud config set project mta-hosting-optimizer
-
-  - gcloud config unset container/use_client_certificate
-
-  - gcloud config set container/use_client_certificate True
-
-  - gcloud container clusters get-credentials mta-hosting-optimizer
-
-  - kubectl create -f admin.yaml
-
-  - kubectl delete secret registry.gitlab.com
-
-  - kubectl create secret docker-registry registry.gitlab.com --docker-server=https://registry.gitlab.com --docker-username=chikelueoji --docker-password=$REGISTRY_PASSWD --docker-email=chike_oji@yahoo.com
-
-  - kubectl apply -f deployment.yml
+  - upgrade
