@@ -1,6 +1,18 @@
 version: '2'
 services:
   web:
-    image: 'registry.gitlab.com/chikelueoji/mta-hosting-optimizer:latest'
+    image: registry.gitlab.com/chikelueoji/mta-hosting-optimizer:latest
     ports:
-     - "8082:8080"
+    - 8082:8080/tcp
+  mta-hosting-optimizer-lb:
+    image: rancher/lb-service-haproxy:v0.9.1
+    ports:
+    - 80:80/tcp
+    labels:
+      io.rancher.container.agent.role: environmentAdmin,agent
+      io.rancher.container.agent_service.drain_provider: 'true'
+      io.rancher.container.create_agent: 'true'
+  web2:
+    image: registry.gitlab.com/chikelueoji/mta-hosting-optimizer:latest
+    ports:
+    - 8082:8080/tcp
