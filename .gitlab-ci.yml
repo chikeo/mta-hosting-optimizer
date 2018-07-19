@@ -30,4 +30,4 @@ digitalocean-deploy:
   image: cdrx/rancher-gitlab-deploy
   stage: deploy
   script:
-  - upgrade
+  - upgrade --no-ssl-verify --environment Default
