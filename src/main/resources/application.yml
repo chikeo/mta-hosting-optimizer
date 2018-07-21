@@ -1,0 +1,23 @@
+X: 1
+
+server:
+  port : 8080
+  
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+        format_sql: true
+        ddl-auto: none
+    show-sql: true    
+        
+logging:
+  level:
+    org:
+      hibernate:
+        stat: debug
+        type: trace

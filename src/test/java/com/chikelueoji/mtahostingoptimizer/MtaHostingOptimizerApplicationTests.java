@@ -1,5 +1,7 @@
 package com.chikelueoji.mtahostingoptimizer;
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,4 +15,12 @@ public class MtaHostingOptimizerApplicationTests {
 	public void contextLoads() {
 	}
 
+	@Test
+	public void applicationContextLoaded() {
+	}
+
+	@Test
+	public void applicationContextTest() {
+		MtaHostingOptimizerApplication.main(new String[] {});
+	}
 }
