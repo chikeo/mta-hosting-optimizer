@@ -7,3 +7,16 @@
 2018-07-21 09:32:21 11205 [restartedMain] INFO  c.c.m.MtaHostingOptimizerApplication - Started MtaHostingOptimizerApplication in 10.832 seconds (JVM running for 12.341)
 2018-07-21 09:32:50 40131 [http-nio-8080-exec-1] DEBUG c.c.m.c.IpConfigRestController - Retrieving the list of inefficient IP address hosts...
 2018-07-21 09:32:57 47138 [http-nio-8080-exec-2] DEBUG c.c.m.c.IpConfigRestController - Retrieving the list of inefficient IP address hosts...
+2018-07-21 10:13:44 5670 [main] INFO  c.c.m.IpConfigRestControllerIntegrationTests - Starting IpConfigRestControllerIntegrationTests on HP with PID 8100 (started by CHIKEO in C:\ContractsProjects\mta-hosting-optimizer)
+2018-07-21 10:13:44 5681 [main] DEBUG c.c.m.IpConfigRestControllerIntegrationTests - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-07-21 10:13:44 5693 [main] INFO  c.c.m.IpConfigRestControllerIntegrationTests - No active profile set, falling back to default profiles: default
+2018-07-21 10:13:59 20730 [main] INFO  c.c.m.IpConfigRestControllerIntegrationTests - Started IpConfigRestControllerIntegrationTests in 16.953 seconds (JVM running for 22.945)
+2018-07-21 10:13:59 21179 [main] DEBUG c.c.m.c.IpConfigRestController - Retrieving the list of inefficient IP address hosts...
+2018-07-21 10:14:01 22501 [main] INFO  c.c.m.MtaHostingOptimizerApplicationTests - Starting MtaHostingOptimizerApplicationTests on HP with PID 8100 (started by CHIKEO in C:\ContractsProjects\mta-hosting-optimizer)
+2018-07-21 10:14:01 22502 [main] DEBUG c.c.m.MtaHostingOptimizerApplicationTests - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-07-21 10:14:01 22503 [main] INFO  c.c.m.MtaHostingOptimizerApplicationTests - No active profile set, falling back to default profiles: default
+2018-07-21 10:14:07 28812 [main] INFO  c.c.m.MtaHostingOptimizerApplicationTests - Started MtaHostingOptimizerApplicationTests in 6.408 seconds (JVM running for 31.027)
+2018-07-21 10:14:07 28889 [main] INFO  c.c.m.MtaHostingOptimizerApplication - Starting MtaHostingOptimizerApplication on HP with PID 8100 (started by CHIKEO in C:\ContractsProjects\mta-hosting-optimizer)
+2018-07-21 10:14:07 28891 [main] DEBUG c.c.m.MtaHostingOptimizerApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-07-21 10:14:07 28892 [main] INFO  c.c.m.MtaHostingOptimizerApplication - No active profile set, falling back to default profiles: default
+2018-07-21 10:14:15 36743 [main] INFO  c.c.m.MtaHostingOptimizerApplication - Started MtaHostingOptimizerApplication in 7.912 seconds (JVM running for 38.958)
