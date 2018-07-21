@@ -30,6 +30,6 @@ digitalocean-deploy:
   image: cdrx/rancher-gitlab-deploy
   stage: deploy
   script:
-  - upgrade --environment Default --stack mta-hosting-optimizer --service web2 --new-image registry.gitlab.com/chikelueoji/mta-hosting-optimizer
   - upgrade --environment Default --stack mta-hosting-optimizer --service web --new-image registry.gitlab.com/chikelueoji/mta-hosting-optimizer
+  - upgrade --environment Default --stack mta-hosting-optimizer --service web2 --new-image registry.gitlab.com/chikelueoji/mta-hosting-optimizer
 
