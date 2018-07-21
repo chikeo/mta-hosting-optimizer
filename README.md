@@ -31,7 +31,7 @@ Setting up the Online Production Deployment from scratch
 --------------------------------------------------------
 1. Setup and account and create a project on https://gitlab.com.
 2. Create a Gitlab CI pipeline by creating a .gitlab-ci.yml file. 
-3. Store your Digitalocean token in an environment variable on your current working workstation (syntax for this varies depending on your OS).
+3. Store your Digitalocean token in an environment variable named DIGITALOCEANTOKEN on your current working workstation (syntax for this varies depending on your OS).
 4. Create a Rancher Digitalocean VM.
 
 	docker-machine create --driver digitalocean --digitalocean-access-token $DIGITALOCEANTOKEN --digitalocean-image ubuntu-16-04-x64 --digitalocean-size 4gb --digitalocean-tags gitlab-rancher-example rancher-ui-host
