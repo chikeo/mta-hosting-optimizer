@@ -15,4 +15,4 @@ services:
   web2:
     image: registry.gitlab.com/chikelueoji/mta-hosting-optimizer:latest
     ports:
-    - 8082:8080/tcp
+    - 8083:8081/tcp
