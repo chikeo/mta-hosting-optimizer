@@ -18,8 +18,8 @@ Quick start
 Accessing the Online Production Deployment
 ------------------------------------------
 1. Load Balancer URL - http://138.197.8.199/hosts/inefficient/
-2. Service 2 - http://159.65.251.93:8082/hosts/inefficient/
-3. Service 1 - http://159.203.110.123:8082/hosts/inefficient/
+2. Service 1 - http://159.65.251.93:8082/hosts/inefficient/
+3. Service 2 - http://138.197.8.199:8082/hosts/inefficient/
 4. Refresh these pages a number of times to confirm that the application is working consistently.
 
 N.B: If any of these URLs are not reachable, kindly contact me.
